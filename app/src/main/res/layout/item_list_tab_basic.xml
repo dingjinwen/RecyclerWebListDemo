@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bg"
+    android:orientation="vertical">
+
+    <!--選項卡-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/store_goods_tab_card"
+            android:textColor="@color/color_49485a"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/text_delete_package"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/delete"
+            android:gravity="left|center"
+            android:text="@string/delete"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <!--選項卡名稱-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16">
+
+        <TextView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:text="@string/store_goods_tab_name"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_17" />
+
+        <EditText
+            android:id="@+id/edit_tab_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/input"
+            android:maxLength="40"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingTop="@dimen/dp_2"
+            android:textColor="@color/color_262626"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_horiz"
+        android:layout_marginLeft="@dimen/dp_16" />
+
+    <!--選項卡類型-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16">
+
+        <TextView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:text="@string/store_goods_tab_type"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_17" />
+
+        <TextView
+            android:id="@+id/text_tab_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:hint="@string/choose"
+            android:textColor="@color/color_262626"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="right|center_vertical"
+            android:src="@mipmap/icon_arrow_right" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_horiz"
+        android:layout_marginLeft="@dimen/dp_16" />
+</LinearLayout>

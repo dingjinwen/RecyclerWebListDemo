@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="goods_package_tabs">
+        <item>非必選</item>
+        <item>單選</item>
+        <item>多選</item>
+        <item>必選兩項</item>
+        <item>必選三項</item>
+        <item>必選四項</item>
+    </string-array>
+
+    <string-array name="goods_package_type">
+        <item>單品</item>
+        <item>套餐</item>
+        <item>僅套餐選項</item>
+    </string-array>
+
+
+</resources>
